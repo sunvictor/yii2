@@ -110,7 +110,7 @@ class Country extends ActiveRecord
 只需要像现在这样，Yii 就能根据类名去猜测对应的数据表名。
 
 > Info: 如果类名和数据表名不能直接对应，
-  可以覆写 [[yii\db\ActiveRecord::tableName()|tableName()]] 方法去显式指定相关表名。
+  可以重写父类的 [[yii\db\ActiveRecord::tableName()|tableName()]] 方法去显式指定相关表名。
 
 使用 `Country` 类可以很容易地操作 `country` 表数据，就像这段代码：
 
